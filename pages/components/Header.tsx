@@ -24,7 +24,7 @@ export default function Header({}: Props) {
           className="flex flex-row items-center">
             {/* Social Icons */}
             <SocialIcon 
-             url="https://twitter.com" 
+             url="https://github.com" 
              fgColor="lightblue" 
              bgColor="transparent" 
             />
@@ -40,6 +40,18 @@ export default function Header({}: Props) {
              fgColor="lightblue"  
              bgColor="transparent" 
             />
+
+            <SocialIcon 
+             url="https://youtube.com" 
+             fgColor="lightblue"  
+             bgColor="transparent" 
+            />  
+
+             <SocialIcon 
+             url="https://linkedin.com" 
+             fgColor="lightblue"  
+             bgColor="transparent" 
+            />    
         </motion.div>
 
         <motion.div 
@@ -54,7 +66,7 @@ export default function Header({}: Props) {
               scale: 1,
           }}
           transition={{
-              duration: 1,
+              duration: 1.5,
           }}
         className="flex flex-row items-center text-blue-200 cursor-pointer">
             <SocialIcon
