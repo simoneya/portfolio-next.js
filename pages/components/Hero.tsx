@@ -20,8 +20,8 @@ export default function Hero({}: Props) {
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
         <BackgroundCircles />
         <img 
-          className="relative rounded-full h-32 w-32 mx-auto"
-          //only working on chrome browser...
+          className="relative rounded-full h-32 w-32 mx-auto object cover"
+          //change picture and use <Image /> component later...
           src="https://lh3.googleusercontent.com/a/AGNmyxbRMo9SmSrs220kZjAwVwZxSoouTk_wvL7EgBNA=s288" 
           alt="" 
         />
