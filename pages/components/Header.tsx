@@ -25,31 +25,31 @@ export default function Header({}: Props) {
             {/* Social Icons */}
             <SocialIcon 
              url="https://github.com" 
-             fgColor="#FF90B0" 
+             fgColor="#2B2B28" 
              bgColor="transparent" 
             />
 
             <SocialIcon 
              url="https://instagram.com" 
-             fgColor="#FF90B0"  
+             fgColor="#2B2B28"  
              bgColor="transparent" 
             />
 
             <SocialIcon 
              url="https://facebook.com" 
-             fgColor="#FF90B0"  
+             fgColor="#2B2B28"  
              bgColor="transparent" 
             />
 
             <SocialIcon 
              url="https://youtube.com" 
-             fgColor="#FF90B0"   
+             fgColor="#2B2B28"   
              bgColor="transparent" 
             />  
 
              <SocialIcon 
              url="https://linkedin.com" 
-             fgColor="#FF90B0"   
+             fgColor="#2B2B28"   
              bgColor="transparent" 
             />    
         </motion.div>
@@ -68,15 +68,15 @@ export default function Header({}: Props) {
           transition={{
               duration: 1.5,
           }}
-        className="flex flex-row items-center text-[#FF90B0] cursor-pointer">
+        className="flex flex-row items-center text-[#2B2B28] cursor-pointer">
             <SocialIcon
              className="cursor-pointer"
              network="email"
-             fgColor="#FF90B0"  
+             fgColor="#2B2B28"  
              bgColor="transparent"
             />
 
-            <p className="uppercase hidden md:inline-flex text-sm text-[#FF90B0]">Get In Touch</p>
+            <p className="uppercase hidden md:inline-flex text-sm text-[#2B2B28]">Get In Touch</p>
         </motion.div>
 
     </header>
