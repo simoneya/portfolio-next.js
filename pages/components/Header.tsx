@@ -25,31 +25,31 @@ export default function Header({}: Props) {
             {/* Social Icons */}
             <SocialIcon 
              url="https://github.com" 
-             fgColor="lightblue" 
+             fgColor="#C87941" 
              bgColor="transparent" 
             />
 
             <SocialIcon 
              url="https://instagram.com" 
-             fgColor="lightblue" 
+             fgColor="#C87941"  
              bgColor="transparent" 
             />
 
             <SocialIcon 
              url="https://facebook.com" 
-             fgColor="lightblue"  
+             fgColor="#C87941"   
              bgColor="transparent" 
             />
 
             <SocialIcon 
              url="https://youtube.com" 
-             fgColor="lightblue"  
+             fgColor="#C87941"   
              bgColor="transparent" 
             />  
 
              <SocialIcon 
              url="https://linkedin.com" 
-             fgColor="lightblue"  
+             fgColor="#C87941"   
              bgColor="transparent" 
             />    
         </motion.div>
