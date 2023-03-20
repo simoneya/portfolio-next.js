@@ -19,6 +19,12 @@ export default function Hero({}: Props) {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
         <BackgroundCircles />
+        <img 
+          className="relative rounded-full h-32 w-32 mx-auto"
+          //only working on chrome browser...
+          src="https://lh3.googleusercontent.com/a/AGNmyxbRMo9SmSrs220kZjAwVwZxSoouTk_wvL7EgBNA=s288" 
+          alt="" 
+        />
         <h1>
             <span>{text}</span>
             <Cursor cursorColor="#ffc0cb"/> 
