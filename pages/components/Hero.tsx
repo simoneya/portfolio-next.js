@@ -25,10 +25,13 @@ export default function Hero({}: Props) {
           src="https://lh3.googleusercontent.com/a/AGNmyxbRMo9SmSrs220kZjAwVwZxSoouTk_wvL7EgBNA=s288" 
           alt="" 
         />
-        <h1>
-            <span>{text}</span>
-            <Cursor cursorColor="#ffc0cb"/> 
-        </h1>
+        <div>
+            <h2 className="text-sm uppercase text-orange-300 pb-2 tracking-[15px]">Web Developer</h2>
+            <h1>
+                <span>{text}</span>
+                <Cursor cursorColor="#ffc0cb"/> 
+            </h1>
+        </div>
     </div>
   );
 }
