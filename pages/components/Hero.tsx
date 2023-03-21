@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from './BackgroundCircles';
@@ -9,8 +10,8 @@ export default function Hero({}: Props) {
     const [text, count] = useTypewriter({
         words: [
             "Hi, the Name's Simona", 
-            "Girl-who-codes", 
-            "<FrontEndDeveloper />"
+            "UI-DEVELOPER", 
+            "<FrontEndDeveloper/>"
         ],
         loop: true,
         delaySpeed: 2000,
@@ -25,17 +26,27 @@ export default function Hero({}: Props) {
           src="https://lh3.googleusercontent.com/a/AGNmyxbRMo9SmSrs220kZjAwVwZxSoouTk_wvL7EgBNA=s288" 
           alt="" 
         />
-        <div>
-            <h2 className="text-sm uppercase text-[#2B2B28] pb-2 tracking-[15px]">Web Developer</h2>
+        <div className="z-20">
+            <h2 className="text-sm uppercase text-[#2B2B28] pb-2 tracking-[15px]">
+                Web Developer
+            </h2>
             <h1 className="text-5xl lg:text-6xl font-semibold px-10">
                 <span className="mr-3">{text}</span>
                 <Cursor cursorColor="#5AD1AF"/> 
             </h1>
-            <div>
-                <button className="heroButton">About</button>
-                <button className="heroButton">Experience</button>
-                <button className="heroButton">Skills</button>
-                <button className="heroButton">Projects</button>
+            <div className="pt-5">
+                <Link href="#about">
+                   <button className="heroButton">About</button>
+                </Link>
+                <Link href="#experience">
+                   <button className="heroButton">Experience</button>
+                </Link>
+                <Link href="#skills">
+                   <button className="heroButton">Skills</button>
+                </Link>
+                <Link href="#projects">
+                   <button className="heroButton">Projects</button>
+                </Link>
             </div>
         </div>
     </div>
