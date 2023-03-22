@@ -18,15 +18,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      {/* Header */}
       <Header />
 
-      {/* Hero */}
       <section id="hero" className="snap-start">
         <Hero />
       </section>
 
-      {/* About */}
       <section id="about" className="snap-center">
         <About />
       </section>
