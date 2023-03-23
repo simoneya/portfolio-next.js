@@ -5,7 +5,7 @@ type Props = {}
 
 export default function ExperienceCard({}: Props) {
   return (
-    <article>
+    <article className="flex flex-col">
       <motion.img 
         initial={{ y: -100, opacity: 0 }}
         transition={{ duration: 1.2 }}
@@ -23,7 +23,7 @@ export default function ExperienceCard({}: Props) {
            {/* Tech used */}
           <img 
             className="h-10 w-10 rounded-full"
-            src="https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png"
+            src="https://w7.pngwing.com/pngs/201/90/png-trans"
             alt="" 
           />
           <img 
@@ -42,7 +42,7 @@ export default function ExperienceCard({}: Props) {
             alt="" 
           />
         </div>
-        <p>Started work...- Ended...</p>
+        <p className="uppercase py-5 text-[#2B2B28]">Started work...- Ended...</p>
         <ul className="list-disc space-y-4 ml-5 text-lg">
           <li>summary points</li>
           <li>summary points</li>
