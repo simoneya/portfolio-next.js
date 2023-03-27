@@ -12,15 +12,19 @@ export default function Projects({}: Props) {
         </h3>
 
         <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
-            {projects.map((project) => (
-                <div className="w-screen flex-shrink-0 snap-center">
+            {projects.map((project, i) => (
+                <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
                     <img 
                       src="https://whatsondisneyplus.com/wp-content/uploads/2019/11/disneyplusmobile_home_ea3b0a6a-e1573467317313.png" 
                       alt=""
                     />
 
                     <div>
-                        <h4>Case study 1 of 2 Disney+ clone</h4>
+                        <h4 className="text-4xl font-semibold text-center">
+                            <span className="underline decoration-[#5AD1AF]/50">
+                               Case study {i+1} of {projects.length} :
+                            </span> Disney+ clone
+                        </h4>
                     </div>
                 </div>
             ))}
