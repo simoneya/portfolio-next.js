@@ -7,7 +7,7 @@ export default function Projects({}: Props) {
     const projects = [1, 2, 3, 4, 5];
   return (
     <div className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
-        <h3 className="absolute top-24 uppercase tracking-[20px] text-[#2B2B28] text-2xl">
+        <h3 className="absolute top-24 lg:top-10 uppercase tracking-[20px] text-[#2B2B28] text-2xl">
             Projects
         </h3>
 
@@ -25,6 +25,14 @@ export default function Projects({}: Props) {
                                Case study {i+1} of {projects.length} :
                             </span> Disney+ clone
                         </h4>
+
+                        <p className="text-md text-center md:text-left lg:text-md">
+                           Disney plus app clone made with react.js...write about project here.
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                           Nullam maximus condimentum risus ut condimentum. 
+                           Nunc porta condimentum ante rutrum placerat.
+                           Aliquam in nisl scelerisque, aliquet mi in, ultricies sapien.
+                        </p>
                     </div>
                 </div>
             ))}
