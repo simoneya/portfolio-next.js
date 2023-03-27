@@ -9,6 +9,13 @@ export default function Projects({}: Props) {
             Projects
         </h3>
 
+        <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
+            {/* Project */}
+            {/* Project */}
+            {/* Project */}
+            {/* Project */}
+        </div>
+
         <div className="w-full absolute top-[30%] bg-[#060047]/10 left-0 h-[500px] -skew-y-12" />
     </div>
   );
