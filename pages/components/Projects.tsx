@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 
 type Props = {}
 
@@ -6,7 +7,11 @@ export default function Projects({}: Props) {
 
     const projects = [1, 2, 3, 4, 5];
   return (
-    <div className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
+    <motion.div 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
         <h3 className="absolute top-24 lg:top-10 uppercase tracking-[20px] text-[#2B2B28] text-2xl">
             Projects
         </h3>
@@ -14,7 +19,11 @@ export default function Projects({}: Props) {
         <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 lg:top-14">
             {projects.map((project, i) => (
                 <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 lg:p-64 h-screen">
-                    <img 
+                    <motion.img 
+                      initial={{ y: -300, }}
+                      transition={{ duration: 1.2 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
                       src="https://whatsondisneyplus.com/wp-content/uploads/2019/11/disneyplusmobile_home_ea3b0a6a-e1573467317313.png" 
                       alt="project-image"
                     />
@@ -39,6 +48,6 @@ export default function Projects({}: Props) {
         </div>
 
         <div className="w-full absolute top-[30%] bg-[#060047]/10 left-0 h-[500px] -skew-y-12" />
-    </div>
+    </motion.div>
   );
 }
