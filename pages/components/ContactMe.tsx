@@ -6,7 +6,7 @@ type Props = {}
 export default function ContactMe({}: Props) {
   return (
     <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
-         <h3 className="absolute top-24 uppercase tracking-[20px] text-[#2B2B28] text-2xl">
+         <h3 className="absolute top-14 uppercase tracking-[20px] text-[#2B2B28] text-2xl">
              Contact
          </h3>
 
@@ -36,13 +36,18 @@ export default function ContactMe({}: Props) {
              <form className="flex flex-col space-y-2 w-fit mx-auto">
                 <div className="flex space-x-2 ">
                     <input placeholder="Name" className="contactInput" type="text" />
-                    <input placeholder="Email" className="contactInput" type="text" />
+                    <input placeholder="Email" className="contactInput" type="email" />
                 </div>
 
                     <input placeholder="Subject" className="contactInput" type="text" />
 
                     <textarea placeholder="Message" className="contactInput" />
-                    <button className="bg-[#5AD1AF] py-5 px-10 rounded-md text-[#2B2B28] font-bold text-lg">Submit</button>
+                    <button 
+                      type="submit" 
+                      className="bg-[#5AD1AF] py-5 px-10 rounded-md text-[#2B2B28] font-bold text-lg"
+                      >
+                        Submit
+                    </button>
              </form>
          </div>
     </div>
