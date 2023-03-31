@@ -9,6 +9,7 @@ import Experience from './components/Experience'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import ContactMe from './components/ContactMe'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -47,6 +48,17 @@ export default function Home() {
       <section id="contact" className="snap-start">
         <ContactMe />
       </section>
+
+      <Link href="hero">
+        <footer className="sticky bottom-5 w-full cursor-pointer">
+          <div className="flex items-center justify-center">
+            <img 
+              className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
+              src="https://lh3.googleusercontent.com/a/AGNmyxbRMo9SmSrs220kZjAwVwZxSoouTk_wvL7EgBNA=s288" 
+              alt="" />
+          </div>
+        </footer>
+      </Link>
     </div>
   );
 }
