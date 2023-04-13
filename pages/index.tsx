@@ -10,6 +10,11 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import ContactMe from './components/ContactMe'
 import Link from 'next/link'
+import { GetStaticProps } from 'next'
+
+type Props = {
+
+}
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -61,4 +66,8 @@ export default function Home() {
       </Link>
     </div>
   );
+}
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+
 }
