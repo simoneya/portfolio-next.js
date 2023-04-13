@@ -5,15 +5,21 @@ import styles from '@/styles/Home.module.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
-import Experience from './components/Experience'
+import WorkExperience from './components/WorkExperience'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import ContactMe from './components/ContactMe'
 import Link from 'next/link'
 import { GetStaticProps } from 'next'
+import { PageInfo, Experience, Skill, Project, Social } from '@/typings'
+
 
 type Props = {
-
+  pageInfo: PageInfo;
+  experience: Experience[];
+  skills: Skill[];
+  projects: Project[];
+  socials: Social[];
 }
 
 const inter = Inter({ subsets: ['latin'] })
@@ -39,7 +45,7 @@ export default function Home() {
       </section>
 
       <section id="experience" className="snap-center scroll-smooth">
-        <Experience />
+        <WorkExperience />
       </section>
 
       <section id="skills" className="snap-start">
