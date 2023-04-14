@@ -38,7 +38,7 @@ const Home = ({pageInfo, skills, projects, socials, experiences}: Props) => {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <Header />
+      <Header socials={socials}/>
 
       <section id="hero" className="snap-start scroll-smooth">
         <Hero />
@@ -95,6 +95,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       projects,
       socials,
     },
+    // fastest way to cached it... =>
     // Next.js will attempt to re-generate the page:
     // -When a request comes in.
     // -At most once every 10 seconds.
