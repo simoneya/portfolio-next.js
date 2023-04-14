@@ -20,7 +20,7 @@ import { fetchSocial } from '@/utils/fetchSocials'
 
 type Props = {
   pageInfo: PageInfo[];
-  experience: Experience[];
+  experiences: Experience[];
   skills: Skill[];
   projects: Project[];
   socials: Social[];
@@ -28,7 +28,7 @@ type Props = {
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+const Home = ({pageInfo, skills, projects, socials, experiences}: Props) => {
   return (
     <div className="bg-[rgb(209,90,124)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-thumb-green-400 scrollbar-track-pink-400/20">
       <Head>
@@ -78,6 +78,8 @@ export default function Home() {
   );
 }
 
+export default Home;
+
 export const getStaticProps: GetStaticProps<Props> = async () => {
   const pageInfo: PageInfo[] = await fetchPageInfo();
   const experiences: Experience[] = await fetchExperiences();
@@ -92,6 +94,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       skills,
       projects,
       socials,
-    }
-  }  
-}
+    },
+  };
+};
