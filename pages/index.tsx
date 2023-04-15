@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Header from './components/Header'
@@ -19,7 +18,7 @@ import { fetchProjects } from '@/utils/fetchProjects'
 import { fetchSocial } from '@/utils/fetchSocials'
 
 type Props = {
-  pageInfo: PageInfo[];
+  pageInfo: PageInfo;
   experiences: Experience[];
   skills: Skill[];
   projects: Project[];
@@ -41,15 +40,15 @@ const Home = ({pageInfo, skills, projects, socials, experiences}: Props) => {
       <Header socials={socials}/>
 
       <section id="hero" className="snap-start scroll-smooth">
-        <Hero />
+        <Hero pageInfo={pageInfo} />
       </section>
 
       <section id="about" className="snap-center scroll-smooth">
-        <About />
+        <About pageInfo={pageInfo} />
       </section>
 
       <section id="experience" className="snap-center scroll-smooth">
-        <WorkExperience />
+        <WorkExperience experiences={experiences}/>
       </section>
 
       <section id="skills" className="snap-start">
@@ -81,7 +80,7 @@ const Home = ({pageInfo, skills, projects, socials, experiences}: Props) => {
 export default Home;
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const pageInfo: PageInfo[] = await fetchPageInfo();
+  const pageInfo: PageInfo = await fetchPageInfo();
   const experiences: Experience[] = await fetchExperiences();
   const skills: Skill[] = await fetchSkills();
   const projects: Project[] = await fetchProjects();

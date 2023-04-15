@@ -1,9 +1,14 @@
 import React from 'react';
 import { motion } from "framer-motion";
+import { PageInfo } from '@/typings';
+import { urlFor } from '@/sanity';
+import { url } from 'inspector';
 
-type Props = {}
+type Props = {
+  pageInfo: PageInfo,
+}
 
-export default function About({}: Props) {
+export default function About({ pageInfo }: Props) {
   return (
       <motion.div
          initial={{ opacity: 0 }}
@@ -28,24 +33,15 @@ export default function About({}: Props) {
           viewport={{
               once: true,
           }}
-            src="https://lh3.googleusercontent.com/a/AGNmyxbd_T3xwm6eR7GhsO5bufmMLgTUWZEEZWfVybzG=s576" 
+            src={urlFor(pageInfo?.profilePic).url()}
             alt=""
             className="-mb-20 md:mb-0 flex-shrink-0 h-32 w-32 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px]"
             />
 
             <div className="space-y-10 px-0 md:px-10">
                 <h4 className="text-4xl font-semibold">A <span className="underline decoration-[#2B2B28]/50">little</span> background here</h4>
-                <p className="text-base">I'm Simona. write about your developer journey here...
-                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                   Quisque sed mi non arcu mollis auctor. 
-                   In sit amet augue id massa aliquet egestas. 
-                   Suspendisse nec augue consectetur, lacinia quam ac, consectetur tortor. 
-                   Vestibulum molestie nisi at nunc elementum, at vestibulum sapien tempus. 
-                   Suspendisse ut faucibus magna. 
-                   Duis feugiat lectus est, non blandit augue lobortis quis. 
-                   Sed eget nibh malesuada, elementum urna tempus, faucibus justo. 
-                   Aenean in blandit neque. Quisque arcu nibh, dapibus ut metus at, 
-                   elementum sodales enim. 
+                <p className="text-base">
+                  {pageInfo?.backgroundInformation}
                 </p>
             </div>
     </motion.div>
