@@ -1,10 +1,13 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import Skill from './Skill';
+import { Skill as SkillType} from '@/typings';
 
-type Props = {}
+type Props = {
+    skills: SkillType[],
+}
 
-export default function Skills({}: Props) {
+export default function Skills({ skills }: Props) {
   return (
     <motion.div 
         initial={{ opacity: 0 }}
