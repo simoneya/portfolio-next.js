@@ -24,7 +24,11 @@ export default function Crafts({ skills }: Props) {
         </h3>
 
         <div className="grid grid-cols-4 gap-5">
-            {skills?.map((skill) => (
+            {skills?.slice(0, skills.length / 2).map((skill) => (
+              <Craft key={skill._id} skill={skill}/>
+            ))}
+
+            {skills?.slice(skills.length / 2, skills.length).map((skill) => (
               <Craft key={skill._id} skill={skill}/>
             ))}
         </div>
