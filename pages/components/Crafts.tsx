@@ -29,7 +29,7 @@ export default function Crafts({ skills }: Props) {
             ))}
 
             {skills?.slice(skills.length / 2, skills.length).map((skill) => (
-              <Craft key={skill._id} skill={skill}/>
+              <Craft key={skill._id} skill={skill} directionLeft/>
             ))}
         </div>
     </motion.div>
