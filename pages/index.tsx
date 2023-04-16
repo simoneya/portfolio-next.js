@@ -5,7 +5,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
 import WorkExperience from './components/WorkExperience'
-import Skills from './components/Skills'
+import Crafts from './components/Crafts'
 import Projects from './components/Projects'
 import ContactMe from './components/ContactMe'
 import Link from 'next/link'
@@ -52,7 +52,7 @@ const Home = ({pageInfo, skills, projects, socials, experiences}: Props) => {
       </section>
 
       <section id="skills" className="snap-start">
-        <Skills skills={skills}/>
+        <Crafts skills={skills}/>
       </section>
 
       <section id="projects" className="snap-start">
