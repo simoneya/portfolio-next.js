@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { Project } from '@/typings';
+import { urlFor } from '@/sanity';
 
 type Props = {
     projects: Project[],
@@ -26,7 +27,7 @@ export default function Projects({ projects }: Props) {
                       transition={{ duration: 1.2 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
-                      src="https://whatsondisneyplus.com/wp-content/uploads/2019/11/disneyplusmobile_home_ea3b0a6a-e1573467317313.png" 
+                      src={urlFor(project?.image).url()}
                       alt="project-image"
                     />
 
@@ -34,7 +35,8 @@ export default function Projects({ projects }: Props) {
                         <h4 className="text-4xl font-semibold text-center">
                             <span className="underline decoration-[#5AD1AF]/50">
                                Case study {i+1} of {projects.length} :
-                            </span> Disney+ clone
+                            </span> 
+                            {project?.title}
                         </h4>
 
                         <p className="text-md text-center md:text-left lg:text-md">
