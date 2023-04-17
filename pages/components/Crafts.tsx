@@ -24,6 +24,7 @@ export default function Crafts({ skills }: Props) {
         </h3>
 
         <div className="grid grid-cols-4 gap-5">
+           {/* for skills to come from both sides */}
             {skills?.slice(0, skills.length / 2).map((skill) => (
               <Craft key={skill._id} skill={skill}/>
             ))}
