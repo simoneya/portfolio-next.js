@@ -1,11 +1,13 @@
 import React from 'react';
 import { motion } from "framer-motion";
+import { Project } from '@/typings';
 
-type Props = {}
+type Props = {
+    projects: Project[],
+}
 
-export default function Projects({}: Props) {
+export default function Projects({ projects }: Props) {
 
-    const projects = [1, 2, 3, 4, 5];
   return (
     <motion.div 
         initial={{ opacity: 0 }}
