@@ -40,11 +40,7 @@ export default function Projects({ projects }: Props) {
                         </h4>
 
                         <p className="text-md text-center md:text-left lg:text-md">
-                           Disney plus app clone made with react.js...write about project here.
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                           Nullam maximus condimentum risus ut condimentum. 
-                           Nunc porta condimentum ante rutrum placerat.
-                           Aliquam in nisl scelerisque, aliquet mi in, ultricies sapien.
+                           {project?.summary}
                         </p>
                     </div>
                 </div>
