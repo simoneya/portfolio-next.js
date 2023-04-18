@@ -40,7 +40,7 @@ export default function Projects({ projects }: Props) {
                         </h4>
 
                         {project?.technologies.map(technology => (
-                            <img key={technology._id} src={urlFor(technology.image).url()} alt="" />
+                            <img key={technology._id} src={urlFor(technology.image).url()} alt="technologies" />
                         ))}
 
                         <p className="text-md text-center md:text-left lg:text-md">
