@@ -39,7 +39,8 @@ export default function Projects({ projects }: Props) {
                             {project?.title}
                         </h4>
 
-                        {project?.technologies.map((technology) => (
+                        <div>
+                          {project?.technologies.map((technology) => (
                             <img 
                                 className="h-5 w-5"
                                 key={technology._id} 
@@ -47,6 +48,7 @@ export default function Projects({ projects }: Props) {
                                 alt="technologies" 
                             />
                         ))}
+                        </div>
 
                         <p className="text-md text-center md:text-left lg:text-md">
                            {project?.summary}
