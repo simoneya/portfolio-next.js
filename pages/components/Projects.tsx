@@ -39,9 +39,9 @@ export default function Projects({ projects }: Props) {
                             {project?.title}
                         </h4>
 
-                        {project?.technologies.map(technology => (
+                        {project?.technologies.map((technology) => (
                             <img 
-                                className="h-10 w-10"
+                                className="h-5 w-5"
                                 key={technology._id} 
                                 src={urlFor(technology.image).url()} 
                                 alt="technologies" 
