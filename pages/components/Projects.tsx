@@ -42,7 +42,7 @@ export default function Projects({ projects }: Props) {
                         <div>
                           {project?.technologies.map((technology) => (
                             <img 
-                                className="h-5 w-5"
+                                className="h-10 w-10"
                                 key={technology._id} 
                                 src={urlFor(technology.image).url()} 
                                 alt="technologies" 
