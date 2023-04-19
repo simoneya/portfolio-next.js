@@ -39,7 +39,7 @@ export default function Projects({ projects }: Props) {
                             {project?.title}
                         </h4>
 
-                        <div>
+                        <div className="flex items-center space-x-2 justify-center">
                           {project?.technologies.map((technology) => (
                             <img 
                                 className="h-10 w-10"
