@@ -28,7 +28,7 @@ export default function Hero({ pageInfo }: Props) {
           className="relative rounded-full h-32 w-32 mx-auto object-cover"
           //change picture and use <Image /> component later...
           src={urlFor(pageInfo?.heroImage).url()} 
-          alt="" 
+          alt="heroImage" 
         />
         <div className="z-20">
             <h2 className="text-sm uppercase text-[#2B2B28] pb-2 tracking-[15px]">
