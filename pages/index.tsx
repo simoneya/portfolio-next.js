@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -69,7 +68,7 @@ const Home = ({pageInfo, skills, projects, socials, experiences}: Props) => {
             <img 
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
               src="https://lh3.googleusercontent.com/a/AGNmyxbRMo9SmSrs220kZjAwVwZxSoouTk_wvL7EgBNA=s288" 
-              alt="" />
+              alt=""/>
           </div>
         </footer>
       </Link>
