@@ -28,7 +28,7 @@ export default function Projects({ projects }: Props) {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       src={urlFor(project?.image).url()}
-                      alt="project-image"
+                      alt="projectImage"
                     />
 
                     <div className="space-y-10 px-0 md:px-10 max-w-6xl">
