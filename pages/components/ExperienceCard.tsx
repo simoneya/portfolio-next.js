@@ -17,7 +17,7 @@ export default function ExperienceCard({ experience }: Props) {
         viewport={{ once: true }}
         className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
         src={urlFor(experience?.companyImage).url()} 
-        alt="cubicod-logo" 
+        alt="cubicodLogo" 
       />
 
       <div className="px-0 md:px-10">
