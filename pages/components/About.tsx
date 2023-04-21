@@ -34,7 +34,7 @@ export default function About({ pageInfo }: Props) {
               once: true,
           }}
             src={urlFor(pageInfo?.profilePic).url()}
-            alt=""
+            alt="profilePic"
             className="-mb-20 md:mb-0 flex-shrink-0 h-32 w-32 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px]"
             />
 
