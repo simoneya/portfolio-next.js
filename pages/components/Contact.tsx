@@ -13,7 +13,7 @@ type Inputs = {
 type Props = {}
 
 
-export default function ContactMe({}: Props) {
+export default function Contact({}: Props) {
 
     const { register, handleSubmit } = useForm<Inputs>();
     const onSubmit: SubmitHandler<Inputs> = (FormData) => {

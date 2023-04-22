@@ -6,7 +6,7 @@ import About from './components/About'
 import WorkExperience from './components/WorkExperience'
 import Crafts from './components/Crafts'
 import Projects from './components/Projects'
-import ContactMe from './components/ContactMe'
+import Contact from './components/Contact'
 import Link from 'next/link'
 import { GetStaticProps } from 'next'
 import { PageInfo, Experience, Skill, Project, Social } from '@/typings'
@@ -59,7 +59,7 @@ const Home = ({pageInfo, skills, projects, socials, experiences}: Props) => {
       </section>
 
       <section id="contact" className="snap-start">
-        <ContactMe />
+        <Contact />
       </section>
 
       <Link href="hero">
