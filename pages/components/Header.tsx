@@ -32,7 +32,7 @@ export default function Header({ socials }: Props) {
               <SocialIcon 
               key={social._id}
               url={social.url} 
-              fgColor="#FF7700"  
+              fgColor="#454545"  
               bgColor="transparent" 
              />
             ))}
@@ -57,11 +57,11 @@ export default function Header({ socials }: Props) {
             <SocialIcon
              className="cursor-pointer"
              network="email"
-             fgColor="#FF7700"  
+             fgColor="#454545"  
              bgColor="transparent"
             />
 
-            <p className="uppercase hidden md:inline-flex text-sm text-[#FF7700]">Get In Touch</p>
+            <p className="uppercase hidden md:inline-flex text-sm text-[#454545]">Get In Touch</p>
         </motion.div>
       </Link>
 
