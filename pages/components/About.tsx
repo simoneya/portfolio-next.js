@@ -16,7 +16,7 @@ export default function About({ pageInfo }: Props) {
          transition={{ duration: 1.5 }}
          className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 pt-20 justify-evenly mx-auto items-center"
          >
-        <h3 className="absolute top-24 uppercase tracking-[20px] text-[#2B2B28] text-2xl">About</h3>
+        <h3 className="absolute top-24 uppercase tracking-[20px] text-[#D8B9C3] text-2xl">About</h3>
 
         <motion.img
           initial={{
