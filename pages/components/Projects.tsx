@@ -33,10 +33,10 @@ export default function Projects({ projects }: Props) {
 
                     <div className="space-y-10 px-0 md:px-10 max-w-6xl">
                         <h4 className="text-4xl font-semibold text-center">
-                            <span className="underline decoration-[#D8B9C3]/50">
+                            <span className="underline decoration-[#FC2947]/50">
                                Case study {i+1} of {projects.length} :
                             </span> 
-                            {project?.title}
+                            {" "} {project?.title}
                         </h4>
 
                         <div className="flex items-center space-x-2 justify-center">
