@@ -59,7 +59,7 @@ export default function Header({ socials }: Props) {
              bgColor="transparent"
             />
 
-            <p className="uppercase hidden md:inline-flex text-sm text-[#7F8487]">Nice to Meet You</p>
+            <p className="uppercase hidden md:inline-flex text-sm text-[#7F8487]">Nice to Meet You!</p>
         </motion.div>
 
     </header>
