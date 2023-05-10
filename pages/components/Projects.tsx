@@ -15,7 +15,7 @@ export default function Projects({ projects }: Props) {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
         className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
-        <h3 className="absolute top-24 lg:top-10 uppercase tracking-[20px] text-[#2B2B28] text-2xl">
+        <h3 className="absolute top-24 lg:top-10 uppercase tracking-[20px] text-[#9BA4B5] text-2xl">
             Projects
         </h3>
 
