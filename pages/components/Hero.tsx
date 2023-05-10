@@ -31,7 +31,7 @@ export default function Hero({ pageInfo }: Props) {
           alt="heroImage" 
         />
         <div className="z-20">
-            <h2 className="text-sm uppercase text-[#2B2B28] pb-2 tracking-[15px]">
+            <h2 className="text-sm uppercase text-[#9BA4B5] pb-2 tracking-[15px]">
                 {pageInfo?.role}
             </h2>
             <h1 className="text-5xl lg:text-6xl font-semibold px-10">
