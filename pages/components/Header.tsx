@@ -55,11 +55,11 @@ export default function Header({ socials }: Props) {
             <SocialIcon
              className="cursor-pointer"
              network="email"
-             fgColor="#7F8487"  
+             fgColor="#9BA4B5"  
              bgColor="transparent"
             />
 
-            <p className="uppercase hidden md:inline-flex text-sm text-[#7F8487]">Nice to Meet You!</p>
+            <p className="uppercase hidden md:inline-flex text-sm text-[#9BA4B5]">Nice to Meet You!</p>
         </motion.div>
 
     </header>
